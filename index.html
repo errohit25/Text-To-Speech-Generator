@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech Generator</title>
+    <style>
+        .box {
+            background-color: blue;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .textarea {
+            background-color: rgba(255, 255, 255, 0.3);
+            width: 80%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            border: none;
+
+
+        }
+
+        #text {
+            height: 150px;
+            width: 80%;
+            border-radius: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            color: black;
+            font-size: 50px;
+
+
+        }
+
+        #btn {
+            border: none;
+            padding: 10px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: red;
+        }
+
+
+        select {
+            flex: 1;
+            width: 200px;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            padding-left: 5px;
+            appearance: none;
+        }
+
+        .btns {
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box ">
+        <h1>Text To Speech Generator</h1>
+        <div class="textarea">
+            <textarea id="text" placeholder="write text hear"></textarea>
+        </div>
+        <div class="btns">
+            <select></select>
+            <button id="btn">listen</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
